@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  face-api:
+    build: .
+    ports:
+      - "8066:8066"
+    environment:
+      API_AUTH_KEY: "112233"
+      HTTP_PORT: "8066"
+      DETECTOR_BACKEND: "insightface"
+      RECOGNITION_MODEL: "buffalo_l"
+      DETECTION_THRESH: "0.7"
+      MAX_FILE_SIZE: "15"
+      SEMAPHORE_LIMIT: "5"
+      MODEL_STORAGE_URL: "https://my-custom-url/models"
