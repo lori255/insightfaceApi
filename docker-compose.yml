@@ -13,4 +13,3 @@ services:
       DETECTION_THRESH: "0.7"
       MAX_FILE_SIZE: "15"
       SEMAPHORE_LIMIT: "5"
-      MODEL_STORAGE_URL: "https://my-custom-url/models"
